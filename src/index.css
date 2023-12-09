@@ -1,0 +1,219 @@
+:root {
+    --font-default: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --size-system: 62.5%;
+    --size-default: 1.6rem;
+    --size-small: 2rem;
+    --size-medium: 2.4rem;
+    --size-large: 3rem;
+
+    --color-black: #000;
+    --color-black-light: #0002;
+    --color-black-level-one: #111;
+    --color-black-level-two: #222;
+    --color-black-level-three: #333;
+    --color-black-level-four: #444;
+    --color-black-level-five: #555;
+    --color-black-level-six: #666;
+    --color-white: #fff;
+    --color-white-level-one: #eee;
+    --color-white-level-two: #ddd;
+    --color-white-level-three: #ccc;
+    --color-white-level-four: #bbb;
+    --color-white-level-five: #aaa;
+    --color-white-level-six: #999;
+    --color-blue-lightest: #cde;
+    --color-bluegrey: #145;
+    --color-lightgreen: #052;
+
+    --primary-bg-color: var(--color-white);
+    --primary-color: var(--color-black-level-two);
+    --primary-backdrop-color: #111a;
+    --primary-svg-fill: var(--color-black-level-two);
+    --theme-button-outline: var(--color-black-level-six);
+    --input-background: var(--color-white-level-two);
+    --theme-button-hover-outline: var(--color-white-level-three);
+    --theme-button-background: var(--color-white-level-one);
+    --theme-button-hover-background: var(--color-white-level-two);
+    --theme-button-svg-fill: var(--color-black-level-two);
+    --header-border-color: var(--color-black-level-six);
+    --cover-background-color: var(--color-white-level-five);
+    --cover-border-color: #0003;
+    --content-background-color: var(--color-black-level-six);
+    --content-background-color-hover: var(--color-black-level-four);
+    --color-link: #00f;
+    --color-blue: #646cff;
+    --color-blue-two: #535bf2;
+
+    --font-size-default: 1.6rem;
+    --line-size-default: 1.6rem;
+    --title-size: var(--size-medium);
+    --primary-icon-size: var(--size-medium);
+    --secondary-icon-size: var(--size-small);
+    --dir-width: 30rem;
+    --img-width: 20rem;
+    --cover-height: 20rem;
+    --content-gap: 2rem;
+    --content-padding: 3rem;
+}
+.dark {
+    --primary-bg-color: var(--color-black-level-two);
+    --primary-color: var(--color-white-level-two);
+    --primary-svg-fill: var(--color-white-level-two);
+    --input-background: var(--color-black-level-four);
+    --theme-button-outline: var(--color-white-level-six);
+    --theme-button-hover-outline: var(--color-black-level-five);
+    --theme-button-background: var(--color-white-level-four);
+    --theme-button-hover-background: var(--color-black-level-five);
+    --theme-button-svg-fill: var(--color-black);
+    --header-border-color: var(--color-white-level-six);
+    --cover-background-color: var(--color-black-level-four);
+    --cover-border-color: #fff3;
+    --content-background-color: var(--color-black-level-three);
+    --content-background-color-hover: var(--color-black-level-one);
+    --color-link: #f0f;
+}
+
+:root {
+    font-family: var(--font-default);
+    font-size: var(--size-system);
+    line-height: var(--line-height-default);
+    height: 100%;
+
+    color-scheme: light dark;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: inherit;
+    scroll-behavior: inherit;
+}
+/* html, */
+body,
+#root,
+.app {
+    height: 100%;
+    font-size: var(--font-size-default);
+    overscroll-behavior-y: contain;
+    /* background: inherit; */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    display: inline-block;
+}
+
+button {
+    color: inherit;
+    background: none;
+    border: none;
+}
+/* .btn {
+    display: inline-block;
+    width: var(--primary-icon-size);
+    height: var(--primary-icon-size);
+}
+.btn svg,
+button svg {
+    fill: var(--primary-svg-fill);
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    filter: invert(0.5);
+} */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    font-weight: unset;
+    font-size: unset;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-black-light);
+    backdrop-filter: blur(1rem);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-lightgreen);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --title-size: var(--size-small);
+        --primary-icon-size: var(--size-small);
+        --secondary-icon-size: var(--size-default);
+        --dir-width: 14rem;
+        --img-width: 9rem;
+        --cover-height: 9rem;
+        --content-gap: 1rem;
+        --content-padding: 1rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    button:hover,
+    .btn:hover {
+        filter: none;
+    }
+    button:active,
+    .btn:active {
+        filter: invert(0.5);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    /* :root {
+        --primary-color: var(--color-white-level-two);
+        --primary-bg-color: var(--color-black-level-two);
+        --theme-button-outline: var(--color-black-level-six);
+        --theme-button-background: var(--color-black-level-four);
+        --theme-button-svg-fill: var(--color-black);
+        --primary-svg-fill: var(--color-white-level-four);
+    } */
+}
+@media (prefers-reduced-motion: no-preference) {
+}

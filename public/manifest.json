@@ -1,0 +1,56 @@
+{
+    "short_name": "Pocket Drive",
+    "name": "Pocket Drive",
+    "description": "a image application",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "logo_512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "logo_192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "logo_mask_512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
+            "src": "logo_mask_192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        }
+    ],
+    "background_color": "#fff",
+    "theme_color": "#646cff",
+    "scope": "/",
+    "display": "standalone",
+    "share_target": {
+        "action": "/img-share",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url",
+            "files": [
+                {
+                    "name": "photos",
+                    "accept": [
+                        "image/jpeg",
+                        "image/png",
+                        "image/webp",
+                        "image/gif",
+                        "image/avif"
+                    ]
+                }
+            ]
+        }
+    }
+}

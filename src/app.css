@@ -1,0 +1,65 @@
+.app {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.home-title {
+    font-weight: 900;
+    font-size: 10rem;
+}
+.title-wrapper {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    height: calc(100vh - 7rem);
+}
+.sub {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/************** App header ************/
+.app-header {
+    display: flex;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    justify-content: right;
+    gap: 3rem;
+}
+
+.button__signin.btn {
+    block-size: 3.6rem;
+    inline-size: 3.6rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    filter: none;
+    border: 1px solid #1115;
+}
+.button__signin.btn:hover {
+    filter: none;
+    background-color: #fffc;
+}
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 1px solid var(--theme-button-outline);
+    overflow: hidden;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .home-title {
+        font-size: 4rem;
+        width: fit-content;
+    }
+    .sub {
+        font-size: 1.3rem;
+    }
+}
+
+/************** Theme Button ************/
